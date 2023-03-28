@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 int _putchar(char c);
-int _strlen(char *s);
+void _pchar(va_list args);
 int _printf(const char *format, ...);
 
 #endif /* _MAIN_H_ */

@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int len = 0, c;
+	int len = 0;
 	const char *p = format; /* aux ptr */
 
 	va_start(args, format);	/* Initialize the argument list */
@@ -19,9 +19,7 @@ int _printf(const char *format, ...)
 			switch (*p)
 			{
 				case 'c':
-					c = va_arg(args, int);
-					_putchar(c);
-					len += 1;
+					_pchar(args);
 					break;
 				default:
 					_putchar('E');
@@ -31,7 +29,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar('x');
+			_putchar(*p); /* Print non % or specifier chars */
 			p++;
 		}
 	}
