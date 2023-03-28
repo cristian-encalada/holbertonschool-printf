@@ -7,6 +7,7 @@
 
 int _putchar(char c);
 void _pchar(va_list args);
+void _perror(void);
 int _printf(const char *format, ...);
 
 #endif /* _MAIN_H_ */

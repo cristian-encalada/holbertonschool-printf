@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 					_pchar(args);
 					break;
 				default:
-					_putchar('E');
+					_perror();
 					break;
 			}
 		p++;	/* check next character */
