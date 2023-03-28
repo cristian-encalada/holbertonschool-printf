@@ -21,6 +21,9 @@ int _printf(const char *format, ...)
 				case 'c':
 					_pchar(args);
 					break;
+				case '%':
+					_ppercent();
+					break;
 				default:
 					_perror();
 					break;
@@ -33,7 +36,6 @@ int _printf(const char *format, ...)
 			p++;
 		}
 	}
-	_putchar('\n');
 	va_end(args); /* Clean up */
 	return (len);
 }
