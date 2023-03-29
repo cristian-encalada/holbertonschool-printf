@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 					_ppercent();
 					break;
 				default:
-					_perror2(p);
+					_pdefault(p);
 					break;
 			}
 		p++;	/* check next character */
