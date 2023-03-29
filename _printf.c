@@ -20,12 +20,14 @@ int _printf(const char *format, ...)
 			{
 				case 'c':
 					_pchar(args);
+					len++;
 					break;
 				case '%':
 					_ppercent();
+					len++;
 					break;
 				case 's':
-					_pstring(args);
+					len = _pstring(args);
 					break;
 				default:
 					_pdefault(p);

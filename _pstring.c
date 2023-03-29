@@ -1,17 +1,22 @@
 #include "main.h"
 /**
- * _pchar - print a char using _putchar
+ * _pstring - print a string using _putchar
  * @args: list of arguments to be printed
+ * Return: Length of the string
  */
-void _pstring(va_list args)
+int _pstring(va_list args)
 {
+	int len;
 	char *str;
+
 	str = va_arg(args, char *);
+	len = _strlen(str);
 	if (str == NULL)
 		str = "error";
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		_putchar(*str);
 		str++;
 	}
+	return (len);
 }
