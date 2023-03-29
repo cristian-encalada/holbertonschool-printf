@@ -2,7 +2,7 @@
 /**
  * _perror - print an error message if invalid arguments
  */
-void _perror(void)
+void _perror()
 {
 	char *error = "Invalid specifier";
 	int i;
