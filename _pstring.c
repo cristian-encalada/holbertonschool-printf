@@ -10,9 +10,9 @@ int _pstring(va_list args)
 	char *str;
 
 	str = va_arg(args, char *);
-	len = _strlen(str);
 	if (str == NULL)
-		str = "error";
+		str = "(null)";
+	len = _strlen(str);
 	while (*str != '\0')
 	{
 		_putchar(*str);
