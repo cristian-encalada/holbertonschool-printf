@@ -8,8 +8,8 @@
 int _putchar(char c);
 void _pchar(va_list args);
 void _ppercent(void);
-void _perror();
 void _pdefault(const char *p);
 int _printf(const char *format, ...);
+void _pstring(va_list args);
 
 #endif /* _MAIN_H_ */

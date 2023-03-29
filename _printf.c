@@ -24,6 +24,9 @@ int _printf(const char *format, ...)
 				case '%':
 					_ppercent();
 					break;
+				case 's':
+					_pstring(args);
+					break;
 				default:
 					_pdefault(p);
 					break;
