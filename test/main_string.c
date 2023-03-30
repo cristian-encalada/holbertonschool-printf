@@ -20,5 +20,9 @@ int main(void)
 	printf("%s \n", NULL);
 	_printf("%s, %s \n", "Test", NULL);
 	printf("%s, %s \n", "Test", NULL);
+	_printf("");
+	printf("");
+	_printf("qwertyuopadghjklzxvbnm");
+	printf("qwertyuopadghjklzxvbnm");
     return (0);
 }
