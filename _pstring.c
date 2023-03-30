@@ -11,7 +11,10 @@ int _pstring(va_list args)
 
 	str = va_arg(args, char *);
 	if (str == NULL)
+	{
 		str = "(null)";
+		len = -1;
+	}
 	len = _strlen(str);
 	while (*str != '\0')
 	{

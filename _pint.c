@@ -2,14 +2,14 @@
 /**
  * _pint - print integer or decimal values using _putchar
  * @args: list of arguments to be printed
-  * Return: Length of the string
+  * Return: Length of the number
  */
-void _pint(va_list args)
+int _pint(va_list args)
 {
-	int num, div = 1;
+	int num, div = 1, len;
 
 	num = va_arg(args, int);
-
+	len = _intlen(num);
 	if (num < 0)
 	{
 		_putchar('-');
@@ -26,4 +26,5 @@ void _pint(va_list args)
 		num %= div;
 		div /= 10;
 	}
+	return (len);
 }

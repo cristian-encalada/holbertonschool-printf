@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 					len = _pstring(args);
 					break;
 				case 'd': case 'i':
-					_pint(args);
+					len = _pint(args);
 					break;
 				default:
 					_pdefault(p);
