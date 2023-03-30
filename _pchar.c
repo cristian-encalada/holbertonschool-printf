@@ -2,11 +2,13 @@
 /**
  * _pchar - print a char using _putchar
  * @args: list of arguments to be printed
+ * Return: length = 1
  */
-void _pchar(va_list args)
+int _pchar(va_list args)
 {
-	int c;
+	int c, len = 1;
 
 	c = va_arg(args, int);
 	_putchar(c);
+	return (len);
 }

@@ -9,8 +9,8 @@ int _strlen(char *s);
 int _putchar(char c);
 int _intlen(int n);
 /* printing functions */
-void _pchar(va_list args);
-void _ppercent(void);
+int _pchar(va_list args);
+int _ppercent(void);
 void _pdefault(const char *p);
 int _pstring(va_list args);
 int _pint(va_list args);

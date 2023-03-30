@@ -20,18 +20,16 @@ int _printf(const char *format, ...)
 			switch (*p)
 			{
 				case 'c':
-					_pchar(args);
-					len++;
+					len += _pchar(args);
 					break;
 				case '%':
-					_ppercent();
-					len++;
+					len += _ppercent();
 					break;
 				case 's':
-					len = _pstring(args);
+					len += _pstring(args);
 					break;
 				case 'd': case 'i':
-					len = _pint(args);
+					len += _pint(args);
 					break;
 				default:
 					_pdefault(p);
