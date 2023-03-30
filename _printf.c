@@ -9,8 +9,8 @@ int _printf(const char *format, ...)
 	va_list args;
 	int len = 0;
 	const char *p = format; /* aux ptr */
-	va_start(args, format);	/* Initialize the argument list */
 
+	va_start(args, format);	/* Initialize the argument list */
 	while (format != NULL && *p != '\0')
 	{
 		if (*p == '%')
@@ -32,7 +32,6 @@ int _printf(const char *format, ...)
 				case 'd': case 'i':
 					_pint(args);
 					break;
-
 				default:
 					_pdefault(p);
 					break;
