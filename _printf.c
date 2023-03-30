@@ -29,6 +29,9 @@ int _printf(const char *format, ...)
 				case 's':
 					len = _pstring(args);
 					break;
+				case 'd': case 'i':
+					len = _pint(args);
+					break;
 				default:
 					_pdefault(p);
 					break;
