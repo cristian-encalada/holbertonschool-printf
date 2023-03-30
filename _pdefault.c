@@ -6,7 +6,7 @@
  */
 void _pdefault(const char *p)
 {
-	_putchar(*(p-1));
+	_putchar(*(p - 1));
 	_putchar(*p);
 	p++;
 }

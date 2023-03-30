@@ -7,6 +7,7 @@
 void _pint(va_list args)
 {
 	int num, div = 1;
+
 	num = va_arg(args, int);
 
 	if (num < 0)
@@ -19,7 +20,7 @@ void _pint(va_list args)
 	while (num / div >= 10)
 		div *= 10;
 
-         while (div != 0)
+	while (div != 0)
 	{
 		_putchar((num / div) + '0');
 		num %= div;
