@@ -32,17 +32,18 @@ int _printf(const char *format, ...)
 				case 'd': case 'i':
 					_pint(args);
 					break;
+
 				default:
 					_pdefault(p);
 					break;
 			}
-		p++;	/* check next character */
 		}
 		else
 		{
 			_putchar(*p); /* Print non % or specifier chars */
-			p++;
+			len++;
 		}
+		p++;
 	}
 	va_end(args); /* Clean up */
 	return (len);
