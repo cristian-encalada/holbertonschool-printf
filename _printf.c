@@ -11,11 +11,12 @@ int _printf(const char *format, ...)
 	const char *p = format; /* aux ptr */
 
 	va_start(args, format);	/* Initialize the argument list */
+	if (format == NULL)
+		len = -1;
 	while (format != NULL && *p != '\0')
 	{
 		if (*p == '%')
-		{
-			p++;	/* check format specifier */
+		{	p++;	/* check format specifier */
 			switch (*p)
 			{
 				case 'c':
@@ -38,11 +39,9 @@ int _printf(const char *format, ...)
 			}
 		}
 		else
-		{
-			_putchar(*p); /* Print non % or specifier chars */
+		{	_putchar(*p); /* Print non % or specifier chars */
 			len++;
-		}
-		p++;
+		}	p++;
 	}
 	va_end(args); /* Clean up */
 	return (len);
