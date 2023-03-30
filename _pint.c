@@ -6,7 +6,7 @@
  */
 void _pint(va_list args)
 {
-	int num;
+	int num, div = 1;
 	num = va_arg(args, int);
 
 	if (num < 0)
@@ -15,9 +15,14 @@ void _pint(va_list args)
 		num *= -1;
 	}
 
-         while (num > 0)
+	/* Find the max divisor */
+	while (num / div >= 10)
+		div *= 10;
+
+         while (div != 0)
 	{
-		_putchar((num % 10) + '0');
-		num /= 10;
+		_putchar((num / div) + '0');
+		num %= div;
+		div /= 10;
 	}
 }
