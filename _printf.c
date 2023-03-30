@@ -30,19 +30,11 @@ int _printf(const char *format, ...)
 					len = _pstring(args);
 					break;
 				case 'd': case 'i':
-					len = _pint(args);
+					_pint(args);
 					break;
 				default:
 					_pdefault(p);
 					break;
-			}
-				case 'd':
-				case 'i':
-			{
-				int num = va_arg(args, int);
-				printf("%d", num);
-				p++;
-				break;
 			}
 		p++;	/* check next character */
 		}

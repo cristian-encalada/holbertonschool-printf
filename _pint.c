@@ -4,13 +4,20 @@
  * @args: list of arguments to be printed
   * Return: Length of the string
  */
-int _pint(va_list args)
+void _pint(va_list args)
 {
-	int len, num;
-
+	int num;
 	num = va_arg(args, int);
-	len = _intlen(num);
-	_putchar(num - 45);
 
-	return (len);
+	if (num < 0)
+	{
+		_putchar('-');
+		num *= -1;
+	}
+
+         while (num > 0)
+	{
+		_putchar((num % 10) + '0');
+		num /= 10;
+	}
 }
