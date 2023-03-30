@@ -9,8 +9,8 @@ int _printf(const char *format, ...)
 	va_list args;
 	int len = 0;
 	const char *p = format; /* aux ptr */
-
 	va_start(args, format);	/* Initialize the argument list */
+
 	while (format != NULL && *p != '\0')
 	{
 		if (*p == '%')
@@ -35,6 +35,14 @@ int _printf(const char *format, ...)
 				default:
 					_pdefault(p);
 					break;
+			}
+				case 'd':
+				case 'i':
+			{
+				int num = va_arg(args, int);
+				printf("%d", num);
+				p++;
+				break;
 			}
 		p++;	/* check next character */
 		}
