@@ -8,10 +8,10 @@ int _intlen(int n)
 {
 	int len;
 
-	if (n == 0)
-		len = 1;
+	if (n <= 0)
+		len = 1; /* Negatives or 0 values */
 	else
-		len = 0; /* For positive or negative values */
+		len = 0; /* Positive values */
 
 	while (n != 0)
 	{

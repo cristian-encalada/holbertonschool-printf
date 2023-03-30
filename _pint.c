@@ -6,7 +6,7 @@
  */
 int _pint(va_list args)
 {
-	int num, div = 1, len;
+	long num, div = 1, len;
 
 	num = va_arg(args, int);
 	len = _intlen(num);
