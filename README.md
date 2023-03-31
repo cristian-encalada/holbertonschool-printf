@@ -22,6 +22,13 @@ Holberton Dev Bootcamp - Montevideo 2023
 - *format: A string containing zero or more directives for how the output should be formatted. This is a mandatory parameter.
 - ...: Zero or more additional arguments, depending on the format string. These are optional parameters and their presence is determined by the format string.
 
+**Compilation**:
+The source code was compiled using this command:
+```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+```
+Where the flag -Wno-format is set for unknown format specifiers.
+
 ## Supported Format Specifiers
 
 The following format specifiers are supported by the _printf function:
@@ -57,6 +64,9 @@ The _printf function relies on the following additional functions: <br>
 | [_print_string](/_print_string.c) | Prints a string. |
 | [_print_int](/_print_int.c) | Prints a signed integer. |
 
+## Testing file
+
+
 ## Man page
 
 [Man page](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/man_3_printf) created for the current _printf implementation. <br>
@@ -66,5 +76,7 @@ man ./man_3_printf
 ```
 **Man page output:**<br>
 ![man page _printf](/img/man_printf.jpg)
+
 ### Authors
+
 Felipe Pereira Forte & Cristian Encalada
