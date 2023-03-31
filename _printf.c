@@ -15,7 +15,9 @@ int _printf(const char *format, ...)
 		return (-1);
 	while (format != NULL && *p != '\0')
 	{
-		if (*p == '%' && *(p + 1) != '0')
+		if (*p == '%' && *(p + 1) == '\0')
+			return (-1);
+		if (*p == '%' && *(p + 1) != '\0')
 		{	p++;	/* check format specifier */
 			switch (*p)
 			{
