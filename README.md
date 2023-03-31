@@ -102,10 +102,33 @@ int main(void)
 	cont = cont + output(a,b);
 	printf("\n---------------\n");
 ```
-To review the complete test collection check the file [main.c](/test/main.c)
+To review the complete test collection (30 tests) check the file [main.c](/test/main.c)
 
 **Test Output**
 
+Here is a sample of the output of the first three tests:
+
+```
+TEST WITHOUT ARGUMENTS:
+
+ [0mTest 1
+expected: Simple string testing
+obtained: Simple string testing
+ [0;32mSuccess: 21 chars printed. [0m
+---------------
+Test 2
+expected:  
+obtained:  
+ [0;32mSuccess: 1 chars printed. [0m
+---------------
+Test 3
+expected: 
+obtained: 
+ [0;32mSuccess: 0 chars printed. [0m
+---------------
+```
+
+To review the complete test output (30 tests) check the file [tests_output](/test/tests_output)
 
 ## Man page
 
