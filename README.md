@@ -24,31 +24,38 @@ Holberton Dev Bootcamp - Montevideo 2023
 
 ## Supported Format Specifiers
 
-> The following format specifiers are supported by the _printf function:
+The following format specifiers are supported by the _printf function:
 
-- %c: Prints a single character.
-- %s: Prints a string.
-- %d or %i: Prints a signed integer.
-- %%: Prints a literal % character.
-   
+| Format Specifier | Description |
+| --- | --- |
+| %c | Prints a single character |
+| %s | Prints a string |
+| %% | Prints a percent character |
+| %d | Prints a signed integer |
+| %i | Prints a signed integer|
+
 ## Non-supported Format specifiers (out of the scope)
 
-- %u: Prints an unsigned integer.(did not do advanced)
-- %o: Prints an octal integer.(did not do advanced)
-- %x or %X: Prints a hexadecimal integer.(did not do advanced)
+| Format Specifier | Description |
+| --- | --- |
+| %u | Prints an unsigned integer |
+| %o | Prints an octal integer |
+| %x | Prints a hexadecimal integer |
 
 ## Additional Functions
 
 The _printf function relies on the following additional functions: <br>
 
-- [_strlen](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_strlen.c): Returns the length of a string.
-- [_putchar](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_putchar.c): Writes a single character to the standard output stream.
-- [_intlen](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_intlen.c): Returns the number of digits in an integer.
-- [_print_char](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_char.c): Prints a single character.
-- [_print_percent](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_percent.c): Prints a literal % character.
-- [_print_default](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_default.c): Handles unknown format specifiers.
-- [_print_string](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_string.c): Prints a string.
-- [_print_int](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_int.c): Prints a signed integer.
+| Function | Description |
+| --- | --- | 
+| [_strlen](/_strlen.c) | Returns the length of a string. |
+| [_putchar](/_putchar.c) | Writes a single character to the standard output stream. |
+| [_intlen](/_intlen.c) | Returns the number of digits in an integer. |
+| [_print_char](/_print_char.c) | Prints a single character. |
+| [_print_percent](/_print_percent.c) | Prints a literal % character. |
+| [_print_default](/_print_default.c) | Handles unknown format specifiers. |
+| [_print_string](/_print_string.c) | Prints a string. |
+| [_print_int](/_print_int.c) | Prints a signed integer. |
 
 ## Man page
 
