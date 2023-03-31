@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _pint - print integer or decimal values using _putchar
+ * _print_int - print integer or decimal values using _putchar
  * @args: list of arguments to be printed
   * Return: Length of the number
  */
-int _pint(va_list args)
+int _print_int(va_list args)
 {
 	long num, div = 1, len;
 

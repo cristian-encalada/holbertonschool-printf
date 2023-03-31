@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _ppercent - print the percent symbol (%)
+ * _print_percent - print the percent symbol (%)
  * Return: length = 1
  */
-int _ppercent(void)
+int _print_percent(void)
 {
 	int len = 1;
 

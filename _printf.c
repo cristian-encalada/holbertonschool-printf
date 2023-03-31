@@ -22,19 +22,19 @@ int _printf(const char *format, ...)
 			switch (*p)
 			{
 				case 'c':
-					len += _pchar(args);
+					len += _print_char(args);
 					break;
 				case '%':
-					len += _ppercent();
+					len += _print_percent();
 					break;
 				case 's':
-					len += _pstring(args);
+					len += _print_string(args);
 					break;
 				case 'd': case 'i':
-					len += _pint(args);
+					len += _print_int(args);
 					break;
 				default:
-					len += _pdefault(p);
+					len += _print_default(p);
 					break;
 			}
 		}

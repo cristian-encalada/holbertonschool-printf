@@ -9,11 +9,11 @@ int _strlen(char *s);
 int _putchar(char c);
 int _intlen(int n);
 /* printing functions */
-int _pchar(va_list args);
-int _ppercent(void);
-int _pdefault(const char *p);
-int _pstring(va_list args);
-int _pint(va_list args);
+int _print_char(va_list args);
+int _print_percent(void);
+int _print_default(const char *p);
+int _print_string(va_list args);
+int _print_int(va_list args);
 int _printf(const char *format, ...);
 
 #endif /* _MAIN_H_ */
