@@ -3,7 +3,7 @@
 Holberton Dev Bootcamp - Montevideo 2023
 ## Tasks Completed
 
-# This is a C function called _printf that produces output according to a format string. The function takes in a format string as its first argument, followed by zero or more additional arguments depending on the format string.
+## This is a C function called _printf that produces output according to a format string. The function takes in a format string as its first argument, followed by zero or more additional arguments depending on the format string.
 Function Signature
 
     int _printf(const char *format, ...);
@@ -11,6 +11,7 @@ Function Signature
 ## Function Parameters
 
     format: A string containing zero or more directives for how the output should be formatted. This is a mandatory parameter.
+    
     ...: Zero or more additional arguments, depending on the format string. These are optional parameters and their presence is determined by the format string.
 
 ## Return Value
@@ -42,4 +43,4 @@ Supported Format Specifiers
     _print_string: Prints a string.
     _print_int: Prints a signed integer.
     
-    Written by Felipe Pereira Forte & Cristian Encalada
+### Written by Felipe Pereira Forte & Cristian Encalada
