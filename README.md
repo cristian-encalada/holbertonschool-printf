@@ -64,7 +64,47 @@ The _printf function relies on the following additional functions: <br>
 | [_print_string](/_print_string.c) | Prints a string. |
 | [_print_int](/_print_int.c) | Prints a signed integer. |
 
-## Testing file
+## Testing
+
+- The functional testing was performed using the following file created and shared among C20 peers.
+
+Here is a sample of the first three tests:
+
+```
+int main(void)
+{
+	int a, b, cont = 0;
+	BLUE;
+	printf("\nTEST WITHOUT ARGUMENTS:\n\n");
+	RESET;
+	printf("Test 1");
+	printf("\nexpected: ");
+	a = printf("Simple string testing");
+	printf("\nobtained: ");
+	fflush(stdout);
+	b = _printf("Simple string testing");
+	cont = cont + output(a,b);
+	printf("\n---------------\n");
+	printf("Test 2");
+	printf("\nexpected: ");
+	a = printf(" ");
+	printf("\nobtained: ");
+	fflush(stdout);
+	b = _printf(" ");
+	cont = cont + output(a,b);
+	printf("\n---------------\n");
+	printf("Test 3");
+	printf("\nexpected: ");
+	a = printf("");
+	printf("\nobtained: ");
+	fflush(stdout);
+	b = _printf("");
+	cont = cont + output(a,b);
+	printf("\n---------------\n");
+```
+To review the complete test collection check the file [main.c](/test/main.c)
+
+**Test Output**
 
 
 ## Man page
