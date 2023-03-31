@@ -39,16 +39,16 @@ Holberton Dev Bootcamp - Montevideo 2023
 
 ## Additional Functions
 
-> The _printf function relies on the following additional functions:
+The _printf function relies on the following additional functions: <br>
 
-    [_strlen](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_strlen.c): Returns the length of a string.
-    [_putchar](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_putchar.c): Writes a single character to the standard output stream.
-    [_intlen](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_intlen.c): Returns the number of digits in an integer.
-    [_print_char](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_char.c): Prints a single character.
-    [_print_percent](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_percent.c): Prints a literal % character.
-    [_print_default](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_default.c): Handles unknown format specifiers.
-    [_print_string](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_string.c): Prints a string.
-    [_print_int](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_int.c): Prints a signed integer.
+- [_strlen](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_strlen.c): Returns the length of a string.
+- [_putchar](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_putchar.c): Writes a single character to the standard output stream.
+- [_intlen](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_intlen.c): Returns the number of digits in an integer.
+- [_print_char](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_char.c): Prints a single character.
+- [_print_percent](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_percent.c): Prints a literal % character.
+- [_print_default](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_default.c): Handles unknown format specifiers.
+- [_print_string](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_string.c): Prints a string.
+- [_print_int](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/_print_int.c): Prints a signed integer.
 
 ## Man page
 
