@@ -12,10 +12,10 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);	/* Initialize the argument list */
 	if (format == NULL)
-		len = -1;
+		return (-1);
 	while (format != NULL && *p != '\0')
 	{
-		if (*p == '%')
+		if (*p == '%' && *(p + 1) != '0')
 		{	p++;	/* check format specifier */
 			switch (*p)
 			{
@@ -32,12 +32,12 @@ int _printf(const char *format, ...)
 					len += _pint(args);
 					break;
 				default:
-					_pdefault(p);
+					len += _pdefault(p);
 					break;
 			}
 		}
 		else
-		{	_putchar(*p); /* Print non % or specifier chars */
+		{	_putchar(*p); /* Print non % or non specifier chars */
 			len++;
 		}	p++;
 	}

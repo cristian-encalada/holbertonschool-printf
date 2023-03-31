@@ -11,7 +11,7 @@ int _intlen(int n);
 /* printing functions */
 int _pchar(va_list args);
 int _ppercent(void);
-void _pdefault(const char *p);
+int _pdefault(const char *p);
 int _pstring(va_list args);
 int _pint(va_list args);
 int _printf(const char *format, ...);

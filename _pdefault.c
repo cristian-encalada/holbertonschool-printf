@@ -4,9 +4,11 @@
  * @p: pointer to the start of the string
  * Return: String length
  */
-void _pdefault(const char *p)
+int _pdefault(const char *p)
 {
+	int len = 2; /* include the first % */
+
 	_putchar(*(p - 1));
 	_putchar(*p);
-	p++;
+	return (len);
 }

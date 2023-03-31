@@ -16,7 +16,7 @@ int _pstring(va_list args)
 		len = -1;
 	}
 	len = _strlen(str);
-	while (*str != '\0')
+	while (*str != '\0' && str !=NULL)
 	{
 		_putchar(*str);
 		str++;
