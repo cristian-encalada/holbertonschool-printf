@@ -6,6 +6,7 @@
 int _ppercent(void)
 {
 	int len = 1;
+
 	_putchar('%');
 	return (len);
 }
