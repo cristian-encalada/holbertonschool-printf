@@ -19,7 +19,7 @@ Function Signature
 The function returns the number of characters printed to the standard output stream. If an error occurs, such as an invalid format specifier, the function returns -1.
 Supported Format Specifiers
 
-### The following format specifiers are supported by the _printf function:
+> The following format specifiers are supported by the _printf function:
 
     %c: Prints a single character.
     %s: Prints a string.
@@ -32,7 +32,7 @@ Supported Format Specifiers
 
 ## Additional Functions
 
-### The _printf function relies on the following additional functions:
+> The _printf function relies on the following additional functions:
 
     _strlen: Returns the length of a string.
     _putchar: Writes a single character to the standard output stream.
