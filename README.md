@@ -4,7 +4,7 @@ Holberton Dev Bootcamp - Montevideo 2023
 
 ## Description
 
-- This is a basic C replica of the standard C function ``printf`` that produces output according to a format string. <br>
+- This project is a basic C replica of the standard C function ``printf`` that produces output according to a format string. <br>
 - The implementation was done using ``variadic functions``, ``switch statement`` and multiple auxiliar functions.
 - The function takes in a ``format string`` as its first argument, followed by zero or more additional arguments depending on the format string.
 
@@ -57,6 +57,7 @@ To execute it, run the command:
 ```
 man ./man_3_printf
 ```
-Man page output:
+**Man page output:**<br>
+![man page _printf](/img/man_printf.jpg)
 ### Authors
 Felipe Pereira Forte & Cristian Encalada
