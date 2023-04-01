@@ -130,6 +130,13 @@ obtained:
 
 To review the complete test output (30 tests) check the file [tests_output](/test/tests_output)
 
+## Flowchart
+
+Here is our Flowchart created to understand our _printf code.
+
+Simplified one:
+![flowchart _printf](/img/printf.PNG)
+
 ## Man page
 
 [Man page](https://github.com/cristian-encalada/holbertonschool-printf/blob/master/man_3_printf) created for the current _printf implementation. <br>
@@ -138,7 +145,7 @@ To execute it, run the command:
 man ./man_3_printf
 ```
 **Man page output:**<br>
-![man page _printf](/img/man_printf.jpg)
+![man_page _printf](/img/man_printf.jpg)
 
 ### Authors
 
