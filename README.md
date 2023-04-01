@@ -135,7 +135,12 @@ To review the complete test output (30 tests) check the file [tests_output](/tes
 Here is our Flowchart created to understand our _printf code.
 
 Simplified one:
-![flowchart _printf](/img/printf.PNG)
+
+![flowchart_printf](/img/printf.PNG)
+
+Specific one:
+
+![flowchart_printf](/img/printf specfinal.png)
 
 ## Man page
 
