@@ -140,7 +140,7 @@ Simplified one:
 
 Specific one:
 
-![flowchart_printf](/img/printf specfinal.png)
+![flowchartspec_printf](/img/printf_specfinal.png)
 
 ## Man page
 
